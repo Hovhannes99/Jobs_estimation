@@ -1,0 +1,620 @@
+@import '../../abstracts/variables';
+body {
+  background: $ev-color-bg-light-cyan-blue;
+}
+.events-page {
+  width: calc(100% - 250px);
+  .events-success {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading {
+    color: $ev-color-dark-blue;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 42px;
+    padding: 40px 0 30px 32px;
+  }
+  .no-event-information-container {
+    display: flex;
+    height: calc(100vh - 200px);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+.events-container {
+  padding: $ev-margin-32 $ev-margin-26 0 $ev-margin-32;
+  &__button-group {
+    &__apply {
+      margin-left: $ev-margin-46;
+    }
+  }
+  .events-container-heading {
+    display: flex;
+    justify-content: space-between;
+  }
+  .events-title {
+    font-weight: bold;
+    font-size: $ev-font-size-px-24;
+    color: $ev-color-black;
+  }
+  .progress-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .progress-column {
+    margin-right: $ev-font-size-em-medium;
+    width: 250px;
+    margin-top: $ev-margin-24;
+    background: $ev-color-white;
+    box-shadow: $ev-box-shadow-0 $ev-box-shadow-px-4 $ev-box-shadow-px-4
+      $ev-color-transparent-black-25;
+    border-radius: $ev-border-px-10;
+    padding: $ev-margin-30 $ev-margin-20 $ev-margin-26 $ev-margin-20;
+    .progress-information-container {
+      border-top: $ev-border-px-1 solid $ev-color-border-light-gray;
+      .information {
+        margin-top: $ev-margin-20;
+        font-weight: bold;
+        font-size: $ev-font-size-em-medium;
+        color: $ev-color-light-black;
+        line-height: $ev-line-height-20;
+      }
+      .information-start-end {
+        margin-top: $ev-margin-22;
+        font-size: $ev-font-size-px-default;
+        color: $ev-color-light-white-gray;
+      }
+    }
+  }
+  .progress-bar-circle-container {
+    padding-bottom: $ev-margin-22;
+    display: flex;
+    align-items: center;
+    .RCP {
+      margin-right: $ev-margin-28;
+    }
+    .RCP svg {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+.my-events-container {
+  margin-top: $ev-margin-40;
+  .my-events-heading {
+    font-weight: bold;
+    font-size: $ev-font-size-px-20;
+    line-height: $ev-line-height-24;
+    color: $ev-color-black;
+  }
+}
+.no-event-information {
+  font-weight: $ev-font-weight-700;
+  font-size: $ev-font-size-px-22;
+  text-align: center;
+  line-height: $ev-line-height-41;
+  color: $ev-color-dark-blue;
+  margin-top: $ev-margin-58;
+}
+.no-event-information-description {
+  font-weight: $ev-font-weight-400;
+  text-align: center;
+  font-size: $ev-font-size-em-big;
+  color: $ev-color-dark-blue;
+  line-height: $ev-line-height-25;
+}
+.text-field-of-label {
+  width: 30%;
+}
+.create-event-page {
+  width: 100%;
+  overflow: auto;
+  padding: $ev-margin-42 $ev-margin-28 $ev-margin-0 $ev-margin-28;
+  height: min-content;
+  .create-event-buttons {
+    display: flex;
+  }
+  .heading {
+    letter-spacing: -0.02em;
+    color: $ev-color-dark-blue;
+  }
+  .stepper {
+    width: 70%;
+    margin: auto;
+  }
+  .select-scores-container {
+    display: flex;
+    justify-content: center;
+  }
+  .text-field-container {
+    display: flex;
+    justify-content: space-between;
+    .text-field-item {
+      width: 70%;
+      margin-left: $ev-margin-46;
+    }
+  }
+  .create-event-step-2 {
+    width: 70%;
+    .create-event-body {
+      background: $ev-color-white;
+      border-radius: $ev-border-px-4;
+    }
+    .create-event-column {
+      height: 30px;
+      display: flex;
+      padding: $ev-margin-16 $ev-margin-32 $ev-margin-16 $ev-margin-16;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: $ev-color-border-light-gray $ev-border-px-1 solid;
+    }
+  }
+  .create-event-container-step-5 {
+    width: 100%;
+    .create-event-body {
+      background: $ev-color-white;
+      border-radius: $ev-border-px-4;
+    }
+    .create-event-column {
+      display: flex;
+      padding: $ev-margin-16 $ev-margin-32 $ev-margin-16 $ev-margin-16;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: $ev-color-border-light-gray $ev-border-px-1 solid;
+    }
+  }
+  .rating-score-range-container {
+    width: 50%;
+    .create-event-select {
+      background: $ev-color-white;
+      border-radius: $ev-border-px-4;
+      .create-event-select-radio {
+        padding: $ev-margin-14 $ev-margin-30 $ev-margin-26 $ev-margin-30;
+      }
+      .create-event-select-column {
+        display: flex;
+        flex-direction: column;
+        padding: $ev-margin-16 $ev-margin-30 $ev-margin-16 $ev-margin-30;
+        border-bottom: $ev-color-border-light-gray $ev-border-px-1 solid;
+      }
+    }
+  }
+  .create-event-percent-field {
+    padding: $ev-margin-36 $ev-margin-32;
+  }
+  .input-field-dolar {
+    display: flex;
+    align-items: center;
+    .input-base {
+      margin-left: $ev-margin-6;
+      border: 0;
+    }
+    .icon-button {
+      background: $ev-color-border-box;
+      border-radius: 0;
+    }
+  }
+  .choose-evaluation-criteria-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .choose-evaluation-criteria-column {
+      width: 49.4%;
+    }
+    .choose-evaluation-criteria {
+      padding-right: $ev-margin-40;
+      background: $ev-color-white;
+      height: 100%;
+      border-radius: $ev-border-px-4;
+      .choose-evaluation-criteria-group {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: $ev-margin-16 $ev-margin-32;
+        border-bottom: $ev-color-border-light-gray $ev-border-px-1 solid;
+      }
+      .choose-evaluation-criteria-group-checkboxes {
+        display: flex;
+        justify-content: space-between;
+        padding: $ev-margin-16 $ev-margin-32;
+      }
+    }
+  }
+}
+.border-color-1 {
+  border: $ev-border-px-1 solid $ev-color-border-box;
+}
+
+.input-field-percent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $ev-color-white;
+  width: 100%;
+  max-width: 272px;
+  border: none;
+  form {
+    border-radius: 30px;
+  }
+  .text-field {
+    fieldset {
+      border: 1px solid rgba(163, 174, 208, 0.2);
+      box-shadow: 14px 17px 40px 2px rgba(112, 144, 176, 0.04);
+      border-top-left-radius: $ev-border-radius-px-30;
+      border-bottom-left-radius: $ev-border-radius-px-30;
+    }
+  }
+  .icon-button {
+    fieldset {
+      border: 0;
+    }
+    background: rgba(163, 174, 208, 0.2);
+    border: 1px solid rgba(163, 174, 208, 0.2);
+    box-shadow: 14px 17px 40px 2px rgba(112, 144, 176, 0.04);
+    border-radius: $ev-border-radius-px-0 $ev-border-radius-px-30 $ev-border-radius-px-30
+      $ev-border-radius-px-0;
+  }
+}
+.checkboxLabel {
+  font-size: $ev-font-size-em-normal;
+  font-weight: $ev-font-weight-400;
+  line-height: $ev-line-height-17;
+  color: $ev-color-black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-create-event {
+  font-weight: $ev-font-weight-500;
+  font-size: $ev-font-size-em-normal;
+  text-align: center;
+  letter-spacing: $ev-letter-spacing-px-normal;
+  line-height: $ev-line-height-16;
+  text-transform: uppercase;
+  color: $ev-color-white;
+  background: $ev-color-blue;
+  border-radius: $ev-border-px-4;
+  padding: $ev-margin-12 $ev-margin-16 $ev-margin-12 $ev-margin-16;
+  margin-right: $ev-margin-28;
+}
+.step-repeat-3 {
+  display: flex;
+  .radio-group {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.add-evaluation-criteria-name {
+  padding: $ev-margin-20 $ev-margin-22 $ev-margin-16 $ev-margin-22;
+  border-bottom: $ev-color-border-light-gray $ev-border-px-1 solid;
+}
+.add-evaluation-criteria-radio {
+  padding: $ev-margin-26 $ev-margin-44 $ev-margin-18 $ev-margin-44;
+}
+.modal-button-container {
+  text-align: center;
+  padding-bottom: $ev-margin-18;
+}
+.tooltip-heading {
+  border-bottom: $ev-color-border-light-gray $ev-border-px-1 solid;
+  padding-bottom: $ev-margin-10;
+}
+.tooltip-radio-container {
+  padding: $ev-margin-14 $ev-margin-10 $ev-margin-10;
+}
+.tooltip-checkbox-container {
+  padding-top: $ev-margin-4;
+  .tooltip-checkbox-container-form-group {
+    overflow: auto;
+    max-height: 200px;
+  }
+}
+
+.select-date {
+  width: auto;
+  border-radius: 30px;
+  padding: $ev-margin-10 $ev-margin-14;
+  font-size: $ev-font-size-px-default;
+  line-height: $ev-line-height-16;
+  cursor: pointer;
+  background: $ev-color-white;
+  //border-radius: $ev-border-px-4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.year {
+  width: 50%;
+  text-align: center;
+  font-weight: $ev-font-weight-700;
+  font-size: $ev-font-size-px-15;
+  line-height: $ev-line-height-22;
+}
+.date-container {
+  background: $ev-color-white;
+  border: $ev-border-px-1 solid #dcdceb;
+  box-shadow: $ev-box-shadow-px-1 $ev-box-shadow-px-4 $ev-box-shadow-px-14
+    $ev-color-transparent-black-05;
+  border-radius: $ev-border-radius-px-30;
+  margin-top: $ev-padding-8;
+  padding-right: $ev-margin-12;
+  padding-top: $ev-padding-8;
+  .date-apply-container {
+    padding: $ev-margin-16 $ev-margin-10 $ev-margin-12;
+  }
+  .calendar {
+    > div {
+      display: grid;
+      height: 480px;
+      overflow-y: auto;
+      > div {
+        border: none;
+        border-radius: 30px;
+        .Mui-selected {
+          background: linear-gradient(254.81deg, #4d5dfb 8.13%, #08c8f6 92.46%);
+        }
+        .MuiDateRangePickerDay-rangeIntervalDayHighlight {
+          background: linear-gradient(254.81deg, #4d5dfb 8.13%, #08c8f6 92.46%);
+        }
+      }
+    }
+  }
+  .month-picker {
+    width: 137px;
+    height: 480px;
+    display: grid;
+    overflow-y: auto;
+    border-right: $ev-border-px-1 solid $ev-color-white-calendar;
+    .Mui-selected {
+      background: linear-gradient(254.81deg, #4d5dfb 8.13%, #08c8f6 92.46%);
+    }
+  }
+  .footer-calendar {
+    border-top: $ev-border-px-1 solid $ev-color-white-calendar;
+  }
+}
+.modal-success-container {
+  padding-bottom: $ev-margin-36;
+  font-weight: $ev-font-weight-500;
+  font-size: $ev-font-size-em-medium;
+  line-height: $ev-line-height-22;
+  padding-left: $ev-margin-52;
+  padding-right: $ev-margin-52;
+}
+.submission-container {
+  padding: $ev-margin-26 $ev-margin-26 $ev-margin-14 $ev-margin-30;
+  .submission-select {
+    width: 411px;
+  }
+  &__button-group {
+    display: flex;
+  }
+  .submission-card {
+    margin-right: $ev-margin-16;
+    background: $ev-color-white;
+    box-shadow: $ev-box-shadow-0 $ev-box-shadow-px-4 $ev-box-shadow-px-4
+      $ev-color-transparent-black-25;
+    border-radius: $ev-border-radius-px-10;
+    .card-content {
+      padding: $ev-margin-10 $ev-margin-16 $ev-margin-18 $ev-margin-10;
+      .submission-card-heading {
+        padding-bottom: $ev-margin-10;
+        border-bottom: $ev-border-px-1 solid $ev-color-border-light-gray;
+      }
+      .submissions-card-of-evaluators {
+        overflow: scroll;
+        height: 120px;
+      }
+    }
+    .submission-color-gray {
+      color: $ev-color-gray-borders;
+    }
+    .submission-border {
+      width: 100%;
+      height: 8px;
+    }
+    .submission-circle {
+      width: 8px;
+      height: 8px;
+      border-radius: $ev-border-radius-100;
+      margin-right: $ev-margin-4;
+    }
+  }
+}
+.submission-view-form-page {
+  width: 100%;
+  height: fit-content;
+  padding: $ev-margin-22 $ev-margin-26 $ev-margin-48 $ev-margin-26;
+  .stepper {
+    width: 70%;
+  }
+  .view-form-color-gray {
+    color: $ev-color-transparent-black-6;
+  }
+  .submission-view-form-container {
+    margin-top: $ev-margin-110;
+    .view-form-heading-checkbox {
+      padding: $ev-margin-30 $ev-margin-30 $ev-margin-20 $ev-margin-96;
+      border-bottom: $ev-border-px-1 solid $ev-color-transparent-black-1;
+    }
+    .view-form-body-container {
+      padding: $ev-margin-30 $ev-margin-30 $ev-margin-66 $ev-margin-100;
+    }
+    .view-form-button-container {
+      padding: $ev-margin-0 $ev-margin-20 $ev-margin-70 $ev-margin-60;
+    }
+  }
+}
+.saved-submissions-container {
+  padding: $ev-margin-34 $ev-margin-28 $ev-margin-28 $ev-margin-28;
+}
+.get-certificate-heading {
+  padding: $ev-margin-20 $ev-margin-0 $ev-margin-14 $ev-margin-0;
+  border-bottom: $ev-border-px-1 solid $ev-color-transparent-black-1;
+}
+.get-certificate-radio-container {
+  padding: $ev-margin-26 $ev-margin-16 $ev-margin-34 $ev-margin-16;
+}
+
+.saved-submissions-certification {
+  padding-top: $ev-margin-100;
+  padding-left: $ev-margin-174;
+  padding-right: $ev-margin-150;
+  padding-bottom: $ev-margin-50;
+}
+.create-event-container {
+  width: 50%;
+}
+.create-event-of-step-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.settings-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: $ev-margin-30;
+  .setting-item {
+    margin-bottom: $ev-margin-0;
+  }
+}
+.settings-container-step-5 {
+  display: flex;
+}
+@media only screen and (max-width: 1120px) {
+  .submission-view-form-page {
+    padding: $ev-margin-20 $ev-margin-10;
+    .submission-view-form-container {
+      .view-form-heading-checkbox {
+        padding: $ev-margin-40;
+      }
+      .view-form-body-container {
+        padding: $ev-margin-40;
+      }
+    }
+  }
+
+  .create-event-page {
+    .rating-score-range-container {
+      width: 100%;
+    }
+    .create-event-step-2 {
+      width: 90%;
+    }
+    .choose-evaluation-criteria {
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 790px) {
+  .settings-container {
+    flex-direction: column;
+    margin-left: $ev-margin-24;
+    justify-content: start;
+    align-items: start;
+    .setting-item {
+      margin-bottom: $ev-margin-14;
+    }
+  }
+  .settings-container-step-5 {
+    flex-direction: column;
+  }
+  .create-event-container-step-5 {
+    .create-event-body {
+      width: 100%;
+      .create-event-column {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+      }
+    }
+  }
+  .text-field-of-label {
+    width: 100%;
+  }
+  .select-scores-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    button {
+      margin-top: $ev-margin-10;
+    }
+  }
+  .create-event-page {
+    padding: $ev-margin-42 $ev-margin-14 $ev-margin-0 $ev-margin-14;
+    .choose-evaluation-criteria-container {
+      .choose-evaluation-criteria {
+        .choose-evaluation-criteria-group {
+          flex-direction: column;
+          padding-top: $ev-margin-26;
+        }
+      }
+    }
+    .create-event-container {
+      width: 90%;
+    }
+    .text-field-container {
+      flex-direction: column;
+      .text-field-item {
+        width: 90%;
+        margin-left: $ev-margin-0;
+        margin-top: $ev-margin-14;
+      }
+    }
+    .stepper {
+      width: 100%;
+    }
+  }
+  .create-event-of-step-heading {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    .button-item {
+      margin-bottom: $ev-margin-16;
+    }
+  }
+  .checkboxLabel {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    margin-bottom: $ev-margin-16;
+
+    .icons-container {
+      margin-top: $ev-margin-16;
+    }
+  }
+}
+@media only screen and (max-width: 660px) {
+  .create-event-buttons {
+    flex-direction: column;
+    button {
+      margin-bottom: $ev-margin-10;
+    }
+  }
+}
+
+@media only screen and (max-width: $ev-medium-screen) {
+  .submission-container {
+    padding: $ev-margin-26 0 0 $ev-margin-12;
+    &__button-group {
+      flex-direction: column;
+      row-gap: $ev-margin-10;
+    }
+  }
+  .events-container {
+    &__button-group {
+      flex-direction: column;
+      row-gap: $ev-margin-10;
+      &__apply {
+        margin-left: 0;
+      }
+    }
+  }
+}

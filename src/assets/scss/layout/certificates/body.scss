@@ -1,0 +1,384 @@
+@import '../../abstracts/variables';
+
+.underscore-certificate {
+  height: 1px;
+  background: $ev-color-dark-blue-certificates;
+}
+.wrapper-achievement {
+  position: relative;
+  background: $ev-color-white;
+  margin: 0 auto;
+  background-image: url('certificateColorStyle.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .achievement-info {
+    width: 50%;
+    padding-top: $ev-margin-14;
+    padding-left: $ev-margin-46;
+    .achievement-title {
+      @include setFontAppearance(
+        $ws-font-family-quicksand,
+        $ev-font-weight-700,
+        normal,
+        $ev-font-size-px-64,
+        $ev-line-height-80
+      );
+      color: $ev-color-title-blue;
+      padding-bottom: $ev-margin-40;
+    }
+    .achievement-subtitle {
+      @include setFontAppearance(
+        $ws-font-family-quicksand,
+        $ev-font-weight-700,
+        normal,
+        $ev-font-size-px-24,
+        $ev-line-height-30
+      );
+      color: $ev-color-subtitle;
+      padding-bottom: $ev-margin-28;
+      padding-left: $ev-margin-10;
+    }
+    .achievement-content-title {
+      @include setFontAppearance(
+        $ws-font-family-quicksand,
+        $ev-font-weight-700,
+        normal,
+        $ev-font-size-px-15,
+        $ev-line-height-20
+      );
+      padding-left: $ev-margin-10;
+      color: $ev-color-light-blue-certificates;
+    }
+    .surname-field {
+      width: 100%;
+      padding-top: $ev-margin-30;
+      padding-left: $ev-margin-10;
+      .name {
+        @include setFontAppearance(
+          $ws-font-family-quicksand,
+          $ev-font-weight-700,
+          normal,
+          $ev-font-size-px-15,
+          $ev-line-height-17
+        );
+        color: $ev-color-light-white-gray;
+        padding-bottom: $ev-margin-10;
+      }
+    }
+    .achievement-total-score-title {
+      @include setFontAppearance(
+        $ws-font-family-quicksand,
+        $ev-font-weight-700,
+        normal,
+        $ev-font-size-px-18,
+        $ev-line-height-22
+      );
+      color: $ev-color-gray-certificates;
+      padding-top: $ev-margin-48;
+      padding-bottom: $ev-margin-60;
+    }
+    .achievement-total-score-wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding-left: $ev-margin-10;
+      padding-bottom: $ev-margin-150;
+      .field {
+        width: 128px;
+        .text {
+          @include setFontAppearance(
+            $ws-font-family-quicksand,
+            $ev-font-weight-700,
+            normal,
+            $ev-font-size-px-10,
+            $ev-line-height-12
+          );
+          padding-top: $ev-margin-6;
+          text-align: center;
+          color: $ev-color-dark-blue-certificates;
+        }
+      }
+    }
+  }
+}
+
+//Certificate Gold style
+
+.wrapper-gold {
+  background: linear-gradient(45.04deg, rgba(230, 232, 244, 0.1) 0%, #fff2e4 99.99%);
+  position: relative;
+  .left-part-style {
+    position: absolute;
+    top: 0;
+  }
+  .wrapper-achievement-gold {
+    padding: $ev-margin-42 $ev-margin-42 $ev-margin-42 $ev-margin-42;
+    .wrapper-title-logo {
+      border: $ev-border-px-2 $ev-color-yellow-certificate dashed;
+      display: flex;
+      .titles {
+        margin: 0 auto;
+        z-index: 1;
+        position: relative;
+        left: $ev-margin-60;
+        .achievement-total-score-title {
+          @include setFontAppearance(
+            $ws-font-family-lato,
+            $ev-font-weight-400,
+            normal,
+            $ev-font-size-px-15,
+            $ev-line-height-17
+          );
+          padding-top: $ev-margin-52;
+          padding-left: $ev-margin-42;
+          color: $ev-color-dark-gray-certificates;
+        }
+        .surname-field {
+          min-width: 400px;
+          padding-top: $ev-margin-12;
+          .text {
+            @include setFontAppearance(
+              $ws-font-family-lato,
+              $ev-font-weight-400,
+              normal,
+              $ev-font-size-px-10,
+              $ev-line-height-12
+            );
+            color: $ev-color-gray-certificates;
+            text-align: center;
+            padding-bottom: $ev-margin-10;
+          }
+        }
+        .achievement-total-score-wrapper {
+          display: flex;
+          justify-content: space-between;
+          padding-top: $ev-margin-50;
+          padding-bottom: $ev-margin-46;
+          .total-left-input {
+            min-width: 144px;
+            text-align: center;
+            position: relative;
+            right: $ev-margin-30;
+          }
+          .total-right-input {
+            min-width: 144px;
+            text-align: center;
+            position: relative;
+            left: $ev-margin-30;
+          }
+          .text {
+            padding-top: $ev-margin-6;
+            text-align: center;
+            @include setFontAppearance(
+              $ws-font-family-lato,
+              $ev-font-weight-500,
+              normal,
+              $ev-font-size-px-8,
+              $ev-line-height-10
+            );
+            color: $ev-color-gray-certificates;
+          }
+        }
+      }
+      svg {
+        position: relative;
+        right: $ev-margin-30;
+      }
+      .achievement-gold-title {
+        @include setFontAppearance(
+          $ws-font-family-andada-pro,
+          $ev-font-weight-400,
+          normal,
+          $ev-font-size-px-56,
+          $ev-line-height-65
+        );
+        color: $ev-color-dark-gray-certificates;
+        padding-top: $ev-margin-64;
+      }
+      .achievement-gold-title::first-letter {
+        font-size: 140%;
+      }
+      .achievement-gold-subtitle {
+        @include setFontAppearance(
+          $ws-font-family-andada-pro,
+          $ev-font-weight-400,
+          normal,
+          $ev-font-size-px-24,
+          $ev-line-height-24
+        );
+        color: $ev-color-orange-certificate;
+        padding-top: $ev-margin-10;
+        padding-left: $ev-margin-110;
+      }
+      .achievement-content-title-gold {
+        font-weight: normal;
+        @include setFontAppearance(
+          $ws-font-family-lato,
+          $ev-font-weight-400,
+          normal,
+          $ev-font-size-px-10,
+          $ev-line-height-12
+        );
+        color: $ev-color-dark-gray-certificates;
+        padding-top: $ev-margin-52;
+        padding-left: $ev-margin-64;
+      }
+    }
+  }
+}
+
+// Certificate Red Style
+
+.wrapper-appreciation {
+  position: relative;
+  padding-right: $ev-margin-62;
+  &-background {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      237.69deg,
+      $ev-color-dark-blue-certificate 28.98%,
+      $ev-color-red-certificate 99.9%
+    );
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    &-whitePart {
+      width: 50%;
+      height: 480px;
+      background: $ev-color-white;
+      position: absolute;
+      right: $ev-margin-62;
+      top: $ev-margin-44;
+    }
+  }
+  &-logo {
+    display: flex;
+    position: relative;
+    align-items: center;
+    &-award {
+      position: absolute;
+      bottom: $ev-margin-86;
+      left: $ev-margin-86;
+      z-index: 3;
+    }
+    &-background-style {
+      position: relative;
+      z-index: 1;
+    }
+    &-complete {
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      &-fields {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        background: none;
+        &-part {
+          padding-right: $ev-margin-20;
+          .title {
+            @include setFontAppearance(
+              $ws-font-family-raleway,
+              $ev-font-weight-700,
+              normal,
+              $ev-font-size-px-40,
+              $ev-line-height-30
+            );
+            color: $ev-color-blue-certificate;
+            padding-top: $ev-margin-70;
+            text-align: end;
+          }
+          .subtitle {
+            @include setFontAppearance(
+              $ws-font-family-raleway,
+              300,
+              normal,
+              $ev-font-size-px-30,
+              $ev-line-height-24
+            );
+            color: $ev-color-blue-certificate;
+            margin-top: $ev-margin-10;
+            letter-spacing: 5px;
+            text-align: end;
+          }
+          .span {
+            width: 234px;
+            height: 1px;
+            background: $ev-color-gray-certificates;
+            margin-top: $ev-margin-14;
+            position: absolute;
+            right: $ev-margin-20;
+          }
+          .proudly {
+            color: $ev-color-dark;
+            padding-top: $ev-margin-44;
+            text-align: end;
+            letter-spacing: 4px;
+            @include setFontAppearance(
+              $ws-font-family-raleway,
+              $ev-font-weight-700,
+              normal,
+              $ev-font-size-px-13,
+              $ev-line-height-15
+            );
+          }
+          .name-surname {
+            padding-top: $ev-margin-22;
+            text-align: center;
+            color: $ev-color-black;
+            padding-left: $ev-margin-110;
+          }
+          .total-score {
+            padding-top: $ev-margin-30;
+            @include setFontAppearance(
+              $ws-font-family-old-standart,
+              $ev-font-weight-400,
+              normal,
+              $ev-font-size-px-12,
+              $ev-line-height-15
+            );
+            color: $ev-color-black;
+            text-align: center;
+          }
+          .inputs {
+            display: grid;
+            justify-content: center;
+            padding-left: $ev-margin-150;
+            margin-top: $ev-margin-30;
+            padding-bottom: $ev-margin-50;
+            .field {
+              width: 120px;
+              .text {
+                @include setFontAppearance(
+                  $ws-font-family-old-standart,
+                  $ev-font-weight-400,
+                  normal,
+                  $ev-font-size-px-6,
+                  $ev-line-height-10
+                );
+                text-align: center;
+                color: $ev-color-black;
+              }
+            }
+            .field-two {
+              width: 120px;
+              padding-top: $ev-margin-36;
+              .text {
+                @include setFontAppearance(
+                  $ws-font-family-old-standart,
+                  $ev-font-weight-400,
+                  normal,
+                  $ev-font-size-px-6,
+                  $ev-line-height-10
+                );
+                text-align: center;
+                color: $ev-color-black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

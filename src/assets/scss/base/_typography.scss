@@ -1,0 +1,21 @@
+@import '../abstracts/mixins';
+
+@font-face {
+  //font-family: "Montserrat-Bold";
+  src: url("../../../../public/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype"),
+  url("../../../../public/fonts/Montserrat/Montserrat-Bold.woff") format("woff");
+  //font-display: auto;
+  //font-style: normal;
+  //font-weight: 700;
+  @include setFontAppearance("Montserrat-Bold", 900, normal, unset);
+}
+
+@font-face {
+  src: url("../../../../public/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  @include setFontAppearance("Montserrat-Regular", 400, normal, unset);
+}
+
+@font-face {
+  src: url("../../../../public/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  @include setFontAppearance("Montserrat-Medium", 500, normal, unset);
+}

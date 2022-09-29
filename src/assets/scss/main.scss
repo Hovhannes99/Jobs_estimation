@@ -1,0 +1,20 @@
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import "layout/pagination/pagination";
+
+@import 'layout/auth/auth';
+@import 'layout/sidebar/sidebar';
+@import 'layout/events/events';
+@import 'layout/reports/reports';
+@import 'layout/evaluatorsStep/evaluatorsStep';
+@import 'layout/dashboard/dashboard';
+@import 'layout/circlePercent/circlePercent';
+@import 'layout/textField/textField';
+@import 'base/general';
+@import 'utils/reset';
+@import 'layout/certificates/body';
+@import 'layout/users/users';
+@import 'layout/modal/modal';
+@import 'layout/certificates/header';
+@import 'layout/overFlowTooltip/overFlowTooltip';
+@import './media/media';

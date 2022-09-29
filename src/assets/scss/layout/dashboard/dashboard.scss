@@ -1,0 +1,196 @@
+@import '../../abstracts/variables';
+
+body {
+  background: $ev-color-bg-light-cyan-blue;
+}
+
+.dashboard-container {
+  width: 100%;
+  .dashboard-padding {
+    padding: $ev-margin-40 $ev-margin-28 0 $ev-margin-20;
+    height: calc(100vh - (200px));
+    .dashboard-select {
+      width: 90%;
+    }
+    .dashboard-heading {
+      font-size: $ev-font-size-px-24;
+      color: $ev-color-black;
+      font-weight: $ev-font-weight-700;
+    }
+    .no-dashboard-container {
+      display: flex;
+      margin-top: $ev-margin-30;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      .no-dashboard-information-heading {
+        margin-top: $ev-margin-26;
+        font-size: $ev-font-size-em-big;
+        color: $ev-color-black;
+      }
+    }
+    .dashboard-information {
+      width: $ev-width-medium;
+      font-size: $ev-font-size-em-medium;
+      color: $ev-color-black;
+      margin-top: $ev-margin-10;
+      line-height: $ev-line-height-22;
+    }
+    .dashboard-pieCharts-container {
+      display: flex;
+      .pieCharts-column {
+        width: 48%;
+        margin-right: $ev-margin-16;
+        padding: $ev-margin-30 $ev-margin-24 $ev-margin-12 $ev-margin-32;
+        background: $ev-color-white;
+        box-shadow: $ev-margin-0 $ev-margin-4 $ev-margin-4 $ev-color-transparent-black-15;
+        border-radius: $ev-border-px-10;
+        .pia-container-information {
+          border-bottom: $ev-color-border-light-gray solid $ev-border-px-1;
+          padding: $ev-margin-16 $ev-margin-0 $ev-padding-8 $ev-margin-0;
+          color: $ev-color-light-gray;
+        }
+        .evaluated-employees-heading {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .evaluated-employees-container {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+    .my-own-custom-container {
+      .slide-div {
+        width: 176px;
+        margin: $ev-margin-30 $ev-margin-0 $ev-margin-30 $ev-margin-0;
+        padding: $ev-margin-24 $ev-margin-16 $ev-margin-40 $ev-margin-16;
+        border-radius: $ev-border-px-10;
+        background: $ev-color-white;
+        box-shadow: $ev-box-shadow-0 $ev-box-shadow-px-4 $ev-box-shadow-px-4
+          $ev-color-transparent-black-15;
+        border-top: $ev-border-px-6 solid $ev-color-light-green;
+      }
+    }
+  }
+}
+.pb-10 {
+  padding-bottom: $ev-margin-10;
+}
+.pt-10 {
+  padding-top: $ev-margin-10;
+}
+.mt-10 {
+  margin-top: $ev-font-size-px-10;
+}
+.mt-20 {
+  margin-top: $ev-margin-20;
+}
+.mt-24 {
+  margin-top: $ev-margin-24;
+}
+.mt-28 {
+  margin-top: $ev-margin-28;
+}
+.mt-50 {
+  margin-top: $ev-margin-50;
+}
+.ml-16 {
+  margin-left: $ev-margin-16;
+}
+.ml-14 {
+  margin-left: $ev-margin-14;
+}
+.ml-50 {
+  margin-left: $ev-margin-50;
+}
+.ml-60 {
+  margin-left: $ev-margin-60;
+}
+.bold {
+  font-weight: bold;
+}
+.font-size-18 {
+  font-size: $ev-font-size-em-big;
+}
+.font-size-20 {
+  font-size: $ev-margin-20;
+}
+.font-size-15 {
+  font-size: $ev-font-size-px-15;
+}
+.font-size-13 {
+  font-size: $ev-font-size-px-13;
+}
+.font-size-10 {
+  font-size: $ev-font-size-em-smallest;
+}
+.color-light-gray2 {
+  color: $ev-color-gray2;
+}
+.font-size-36 {
+  font-size: $ev-font-size-px-36;
+}
+.color-black {
+  color: $ev-color-black;
+}
+.color-gray {
+  color: $ev-color-gray;
+}
+.color-light-gray {
+  color: $ev-color-light-gray;
+}
+.color-dark-grey {
+  color: $ev-color-dark-grey;
+}
+.light-gray-border {
+  border: 1px solid #f4f7fe;
+}
+.text-center {
+  text-align: center;
+}
+.m-auto {
+  margin: auto;
+}
+.mt-48 {
+  margin-top: $ev-margin-48;
+}
+.mt-52 {
+  margin-top: $ev-margin-52;
+}
+.rec.rec-arrow {
+  border-radius: $ev-margin-0;
+  display: flex;
+  align-items: flex-start;
+}
+.rec button {
+  display: flex;
+  align-items: flex-start;
+  height: fit-content;
+}
+.Mui-disabled {
+  display: none;
+}
+.rec.rec-arrow:hover {
+  border-radius: $ev-border-percent-50;
+}
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+}
+.rec-carousel-item:focus {
+  outline: none;
+  box-shadow: inset $ev-box-shadow-0 $ev-box-shadow-0 $ev-box-shadow-px-1 $ev-box-shadow-px-1
+    lightgrey;
+}
+.arrow-left-icon {
+  display: flex;
+  justify-content: center;
+  transform: rotate($ev-rotate-def-down);
+}
+
+.pieSeries-legend {
+  border-left: $ev-border-px-2 solid $ev-color-light-blue;
+  margin-left: $ev-margin-30;
+  padding-left: $ev-margin-30;
+}

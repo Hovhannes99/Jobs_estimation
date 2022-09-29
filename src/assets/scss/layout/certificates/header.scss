@@ -1,0 +1,65 @@
+.wrapper-certificates{
+  overflow: scroll;
+  .certificates{
+    max-width: 849px;
+    min-width: 849px;
+    margin: 0 auto;
+    .certificate {
+      animation-duration: 0.4s;
+      animation-name: slider;
+      animation-direction: alternate;
+    }
+    @keyframes slider {
+      from {
+        margin-left: 100%;
+        width: 120%;
+      }
+
+      to {
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+  }
+  &-header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: $ev-margin-26;
+    .custom-pagination{
+      width: 50px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: $ev-margin-10;
+      .circle{
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        border: $ev-border-px-1 solid $ev-color-blue;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+      .circle-active {
+        background-color:$ev-color-blue;
+      }
+
+
+    }
+    .title{
+      font-family: Montserrat, sans-serif;
+      font-weight: bold;
+      font-size: $ev-font-size-px-20;
+      line-height: $ev-line-height-22;
+      align-items: center;
+      color: $ev-color-light-black;
+    }
+    .icons{
+      padding-bottom: $ev-margin-44;
+      padding-right: $ev-margin-10;
+      display: flex;
+      div{
+        padding-left: $ev-margin-28;
+        cursor: pointer;
+      }
+    }
+  }
+}

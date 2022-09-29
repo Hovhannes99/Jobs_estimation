@@ -1,0 +1,60 @@
+@import '../abstracts/variables';
+
+@media only screen and (max-width: 1350px) {
+  .chart-side-by-side-bar {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .tabs-events-container {
+    button {
+      font-size: $ev-font-size-em-normal;
+    }
+  }
+  .dashboard-container {
+    max-width: calc(100% - 250px);
+  }
+  .dashboard-container .dashboard-padding .dashboard-pieCharts-container .pieCharts-column {
+    width: 100%;
+    padding: $ev-margin-0;
+  }
+  .dashboard-pieCharts-container {
+    flex-direction: column;
+    max-width: 100%;
+    .pieCharts-column {
+      max-width: 100%;
+      margin-top: $ev-margin-30;
+      margin-right: $ev-margin-0;
+      padding: $ev-margin-0;
+      .evaluated-employees-heading {
+        padding: $ev-margin-20;
+      }
+      .evaluated-employees-container {
+        padding: $ev-margin-20;
+      }
+    }
+  }
+  .choose-evaluation-criteria-container {
+    flex-wrap: wrap;
+    .choose-evaluation-criteria-column {
+      min-width: 100%;
+      margin-bottom: $ev-margin-10;
+      .choose-evaluation-criteria {
+        padding-right: $ev-margin-0;
+      }
+    }
+  }
+}
+.range-container {
+  padding: $ev-margin-20;
+}
+@media only screen and (max-width: 1550px) {
+  .create-event-container {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 1090px) {
+  .create-event-container {
+    width: 90%;
+  }
+}

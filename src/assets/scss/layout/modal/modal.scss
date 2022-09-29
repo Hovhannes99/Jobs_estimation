@@ -1,0 +1,30 @@
+@import '../../abstracts/variables';
+
+.adding-new-user-modal-heading {
+  border-bottom: #e6e8f0 $ev-border-px-1 solid;
+  padding: $ev-margin-20 $ev-margin-0 $ev-margin-16 $ev-margin-0;
+}
+.adding-new-user-modal-body {
+  padding: $ev-margin-32 $ev-margin-24;
+  border-bottom: 1px solid #e6e8f0;
+}
+.feedbacks-modal-body {
+  height: 100px;
+  overflow-y: auto;
+}
+.modal-body {
+  padding: $ev-margin-20 $ev-margin-20 $ev-margin-36 $ev-margin-20;
+}
+.modal-heading {
+  border-bottom: $ev-color-border-light-gray $ev-border-px-1 solid;
+  padding: $ev-margin-20 $ev-margin-0 $ev-margin-16 $ev-margin-0;
+}
+.modal-footer {
+  padding: $ev-margin-0 $ev-margin-16 $ev-margin-0 $ev-margin-16;
+  display: flex;
+  justify-content: center;
+}
+.check-icon-container {
+  padding: $ev-margin-30 $ev-margin-52 $ev-margin-30 $ev-margin-52;
+  text-align: center;
+}

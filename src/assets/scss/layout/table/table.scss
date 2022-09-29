@@ -1,0 +1,41 @@
+@import '../../abstracts/_variables.scss';
+
+.table-container {
+  width: 100%;
+  padding-bottom: $ev-margin-20;
+}
+.table-arrow-drop-container {
+  display: flex;
+  align-items: center;
+  //font-weight: bold;
+  font-weight: 500;
+  color: $ev-color-gray2;
+  cursor: pointer;
+  letter-spacing: -0.02em;
+  font-size: 14px;
+  .table-arrow-drop {
+    //display: flex;
+    //flex-direction: column;
+    //height: 10px;
+    //svg {
+    //  margin-top: $ev-margin-minus-14;
+    //}
+  }
+}
+.table-head {
+  //background: $ev-color-light-green;
+}
+.collapse-table-container {
+  padding: $ev-margin-20 $ev-margin-20 $ev-margin-24 $ev-margin-52;
+  overflow: auto;
+  max-height: 300px;
+
+  .collapse-table-heading {
+    padding-bottom: $ev-margin-12;
+    border-bottom: $ev-border-px-1 solid $ev-color-transparent-black-1;
+  }
+
+  .collapse-table-column {
+    margin-right: $ev-margin-68;
+  }
+}

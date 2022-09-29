@@ -1,0 +1,65 @@
+@import '../../abstracts/variables';
+
+.reports-page {
+  width: calc(100% - 250px);
+  .performance-report {
+    padding: $ev-margin-18 $ev-margin-26 $ev-margin-26 $ev-margin-26;
+  }
+  .heading {
+    color: $ev-color-dark-blue;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 42px;
+    padding: 40px 0 30px 32px;
+  }
+  .comparative-report-container {
+    padding: $ev-margin-0 $ev-margin-28 $ev-margin-28 $ev-margin-30;
+    .card-container {
+      .card-column {
+        width: 271px;
+        background: $ev-color-white;
+        border-radius: $ev-border-radius-px-4;
+        box-shadow: inherit;
+        .card-text-circle {
+          width: 12px;
+          height: 12px;
+          border-radius: $ev-border-radius-100;
+        }
+      }
+    }
+  }
+  .employee-personal-heading {
+    padding: $ev-margin-20 $ev-margin-44 $ev-margin-14 $ev-margin-44;
+    background: $ev-color-light-green;
+    border-radius: $ev-border-radius-px-24 $ev-border-radius-px-24 $ev-border-radius-px-0
+      $ev-border-radius-px-0;
+    color: $ev-color-light-black;
+  }
+  .employee-personal-card {
+    background: $ev-color-white;
+    width: 320px;
+    .employee-personal-card-heading {
+      border-bottom: $ev-border-px-1 solid $ev-color-gray-borders-2;
+      padding: $ev-margin-18 $ev-margin-14 $ev-padding-8 $ev-margin-14;
+    }
+    .employee-personal-card-checkbox-container {
+      padding: $ev-margin-0 $ev-margin-0 $ev-margin-14 $ev-margin-0;
+    }
+  }
+}
+
+@media only screen and (max-width: $ev-medium-screen) {
+  .performance-report {
+    .export-button-wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+  .saved-submissions-certification {
+    padding: 100px 0 0 10px;
+  }
+}

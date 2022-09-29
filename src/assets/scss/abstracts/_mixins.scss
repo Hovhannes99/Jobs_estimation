@@ -1,0 +1,20 @@
+@mixin setFontAppearance($family, $weight, $style, $fontSize, $height) {
+  font-family: $family, sans-serif;
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $fontSize;
+  line-height: $height;
+}
+
+@mixin setFontSizes($size, $height, $spacing) {
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
+@mixin setElementSize($width, $height) {
+  width: $width;
+  height: $height;
+  max-width: $width;
+  max-height: $height;
+}

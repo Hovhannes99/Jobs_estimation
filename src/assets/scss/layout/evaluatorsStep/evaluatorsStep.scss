@@ -1,0 +1,98 @@
+@import '../../abstracts/variables';
+
+.evaluators-step-container {
+  width: 100%;
+  height: fit-content;
+  color: $ev-color-black;
+  padding: $ev-margin-36 $ev-margin-72 $ev-margin-68 $ev-margin-76;
+  .evaluators-step-rating-container {
+    background: $ev-color-white;
+    border-radius: $ev-border-radius-px-10;
+    .evaluators-step-rating-heading {
+      padding: $ev-margin-22 $ev-margin-22 $ev-margin-10 $ev-margin-50;
+      border-bottom: $ev-border-px-1 solid $ev-color-transparent-black-1;
+    }
+    .evaluators-step-rating-heading-step-4 {
+      padding: $ev-margin-34 $ev-margin-22 $ev-margin-10 $ev-margin-60;
+      border-bottom: $ev-border-px-1 solid $ev-color-transparent-black-1;
+    }
+    .evaluators-step-rating-body {
+      padding: $ev-margin-6 $ev-margin-14 $ev-margin-0 $ev-margin-48;
+    }
+    .evaluators-step-rating-body-step-4 {
+      padding: $ev-margin-26 $ev-margin-14 $ev-margin-96 $ev-margin-60;
+    }
+    .evaluators-step-button-container {
+      padding: $ev-margin-52 $ev-margin-4 $ev-margin-76 $ev-margin-48;
+    }
+    .evaluators-step-button-container-step-4 {
+      padding: $ev-margin-52 $ev-margin-4 $ev-margin-28 $ev-margin-60;
+    }
+  }
+  .collapse-container {
+    width: 70%;
+    .collapse-container-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: $ev-margin-16 $ev-margin-40 $ev-margin-16 $ev-margin-16;
+      border: $ev-border-px-1 solid $ev-color-light-black-collapse;
+      background: $ev-color-white;
+      border-bottom: $ev-border-px-0;
+      box-shadow: inset $ev-box-shadow-0 $ev-box-shadow-minus-1 $ev-box-shadow-0
+        $ev-color-light-black-collapse;
+      border-radius: $ev-border-radius-px-4 $ev-border-radius-px-4 $ev-border-radius-px-0
+        $ev-border-radius-px-0;
+    }
+    .collapse-container-body {
+      border: $ev-border-px-1 solid $ev-color-light-black-collapse;
+      .collapse-box {
+        padding: $ev-margin-16;
+        color: $ev-color-black-collapse;
+        background: $ev-color-white;
+        box-shadow: inset $ev-box-shadow-0 $ev-box-shadow-minus-1 $ev-box-shadow-0
+          $ev-color-light-black-collapse;
+      }
+    }
+    .collapse-container-footer {
+      padding: $ev-margin-16;
+      background: $ev-color-light-gray-collapse;
+      border-radius: $ev-border-radius-px-0 $ev-border-radius-px-0 $ev-border-radius-px-4
+        $ev-border-radius-px-4;
+      justify-content: end;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .evaluators-step-box-container {
+    width: 50%;
+    border: $ev-border-px-1 solid $ev-color-border-box;
+    padding: $ev-margin-16;
+    border-radius: $ev-border-radius-px-4;
+    margin-top: $ev-margin-28;
+    .evaluators-step-box-row {
+      margin-bottom: $ev-margin-16;
+      font-weight: $ev-font-weight-400;
+      font-size: $ev-font-size-em-normal;
+      line-height: $ev-line-height-20;
+      color: $ev-color-black;
+    }
+  }
+}
+.evaluators-step-sidebar {
+  color: $ev-color-light-gray-2;
+  .evaluators-step-heading {
+    padding: $ev-margin-64 $ev-margin-48 $ev-margin-36 $ev-margin-30;
+  }
+  .evaluators-step-body {
+    .evaluators-step-box {
+      padding: $ev-margin-16 $ev-margin-12 $ev-margin-16 $ev-margin-12;
+      margin-top: $ev-margin-2;
+    }
+  }
+  .evaluators-step-box-active {
+    //background: $ev-color-sidebar-row-selected;
+    background: linear-gradient(180deg, #14b6f7 0%, #4866fb 100%);
+    color: $ev-color-white;
+  }
+}

@@ -1,0 +1,78 @@
+@import '../../abstracts/variables';
+
+.text-field {
+  fieldset {
+    border: $ev-border-px-0;
+    border-radius: $ev-border-radius-px-2;
+  }
+}
+.text-field-evaluate {
+  fieldset {
+    border-radius: $ev-border-radius-px-2;
+    border: $ev-border-px-0;
+  }
+}
+
+.text-field-with-icon {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background: $ev-color-white;
+  border: $ev-border-px-1 solid $ev-color-border-box;
+  border-radius: $ev-border-radius-px-2;
+  box-shadow: none;
+  .input-base {
+    width: 100%;
+    margin-left: $ev-margin-14;
+    border: 0;
+    color: $ev-color-light-gray;
+    line-height: $ev-line-height-17;
+    font-size: $ev-font-size-em-normal;
+    font-weight: $ev-font-weight-400;
+  }
+  .icon-button {
+    width: 33px;
+    height: 100%;
+    background: $ev-color-border-box;
+    border-radius: 0;
+  }
+}
+.text-field-search-with-icon {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  margin-top: $ev-margin-minus-8;
+  background: $ev-color-white;
+  border: $ev-border-px-1 solid $ev-color-border-box;
+  border-radius: $ev-border-radius-px-2;
+  box-shadow: none;
+  .icon-button {
+    margin-left: $ev-margin-18;
+  }
+}
+.text-field-style {
+  width: 272px;
+  border-radius: $ev-border-radius-px-30;
+  height: 40px;
+  background: $ev-color-white;
+  display: flex;
+  .input-base {
+    width: 100%;
+    padding: $ev-margin-10 $ev-margin-4;
+    font-weight: $ev-font-weight-400;
+    font-size: $ev-font-size-em-normal;
+    line-height: $ev-line-height-17;
+    color: $ev-color-dark-grey;
+  }
+  .icon-button {
+    padding: $ev-margin-14;
+  }
+}
+.label-style {
+  label {
+    font-size: $ev-font-size-px-default;
+    font-weight: $ev-font-weight-500;
+    letter-spacing: $ev-letter-spacing-px-normal;
+    color: $ev-color-light-black;
+  }
+}

@@ -1,0 +1,34 @@
+@import '../../abstracts/variables.scss';
+
+.sidebar-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .user-name {
+    font-weight: $ev-font-weight-500;
+    font-size: $ev-font-size-em-medium;
+    text-align: center;
+    color: $ev-color-gray2;
+    line-height: $ev-line-height-20;
+  }
+
+  .sidebar-button-create {
+    width: 146px;
+    height: 40px;
+    margin-top: $ev-margin-20;
+  }
+}
+
+.sidebar-logout {
+  display: flex;
+  margin-bottom: $ev-margin-42;
+  .sidebar-logout-text {
+    margin-left: $ev-margin-18;
+    font-size: $ev-font-size-em-big;
+    text-align: center;
+    color: $ev-color-gray2;
+    font-weight: $ev-font-weight-500;
+    line-height: $ev-line-height-22;
+    text-transform: capitalize;
+  }
+}

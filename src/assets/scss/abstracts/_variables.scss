@@ -1,0 +1,219 @@
+// Manager Colors
+$ev-color-dark: #16161b;
+$ev-color-light-blue-certificates: #6fb5c2;
+$ev-color-blue: #00a3ff;
+$ev-color-blue-certificate: #006385;
+$ev-color-dark-blue-certificate: #006e93;
+$ev-color-dark-blue-certificates: #43597a;
+$ev-color-white: #ffffff;
+$ev-color-black: #131924;
+$ev-color-gray: #333333;
+$ev-color-gray2: #a3aed0;
+$ev-color-light-green: #b2e4d5;
+$ev-color-green: #1eb892;
+$ev-color-light-gray-blue: #dbe2ea;
+$ev-color-border-light-gray: #ececec;
+$ev-color-light-white-gray: #898989;
+$ev-color-light-gray: #828282;
+$ev-color-dark-grey: #8f9bba;
+$ev-color-gray-certificates: #8f8f8f;
+$ev-color-dark-gray-certificates: #606060;
+$ev-color-light-gray-2: #979797;
+$ev-color-light-black: #4f4f4f;
+$ev-color-gray-borders: #bdbdbd;
+$ev-color-gray-borders-2: #c4c4c4;
+$ev-color-light-blue: #1f6f8b3b;
+$ev-color-bg-light-cyan-blue: #f2f5fd;
+$ev-color-bg-dark-blue-magenta: #00000066;
+$ev-color-bg-foam: #e0fafd;
+$ev-color-light-green: #b2e4d5;
+$ev-color-red: #ff6982;
+$ev-color-dark-red: #ff0028ff;
+$ev-color-red-certificate: #ff2329;
+$ev-color-pink: #f2a6a6;
+$ev-color-black-collapse: #303030;
+$ev-color-light-black-collapse: #bfbfbf;
+$ev-color-light-gray-collapse: #fafafa;
+$ev-color-border-box: #e0e0e0;
+$ev-color-title-blue: #4f66e4;
+$ev-color-subtitle: #4f66e4;
+$ev-color-orange-certificate: #b1752e;
+$ev-color-yellow-certificate: #cebb6d;
+$ev-color-sidebar-row-selected: #262f3f;
+$ev-color-gray-circle-border: #d8d8d8;
+$ev-color-gray-chartSideBySideBar: #756f86;
+$ev-color-red-percent: #ff7171;
+$ev-color-orange-percent: #f2ac57;
+$ev-color-blue-percent: #0880ae;
+$ev-color-completed: #14a38b;
+$ev-color-white-calendar: #dfe5eb;
+$ev-color-black-heading: #1c2b2d;
+$ev-color-black-modal-heading: #111827;
+$ev-color-dark-blue: #2b3674;
+
+// Colors with opacity
+$ev-color-transparent-black-15: rgba(0, 0, 0, 0.15);
+$ev-color-transparent-black-25: rgba(0, 0, 0, 0.25);
+$ev-color-transparent-black-1: rgba(0, 0, 0, 0.1);
+$ev-color-transparent-black-05: rgba(0, 0, 79, 0.05);
+$ev-color-transparent-black-6: rgba(0, 0, 0, 0.6);
+
+// Home Font Sizes
+$ev-font-size-px-6: 6px;
+$ev-font-size-px-8: 8px;
+$ev-font-size-px-default: 14px;
+$ev-font-size-px-36: 36px;
+$ev-font-size-px-13: 13px;
+$ev-font-size-px-12: 12px;
+$ev-font-size-px-10: 10px;
+$ev-font-size-px-18: 18px;
+$ev-font-size-px-20: 20px;
+$ev-font-size-px-22: 22px;
+$ev-font-size-px-24: 24px;
+$ev-font-size-px-30: 30px;
+$ev-font-size-px-40: 40px;
+$ev-font-size-px-56: 56px;
+$ev-font-size-px-64: 64px;
+$ev-font-size-px-15: 1em; // 15px
+$ev-font-size-em-normal: 14px;
+$ev-font-size-em-medium: 16px;
+$ev-font-size-em-big: 18px;
+$ev-font-size-em-chart-size: 34px;
+$ev-font-size-36: 2.428em; // 36px
+$ev-font-size-em-smallest: 10px; // 10px
+
+// Manager Margins Padding
+$ev-margin-0: 0px;
+$ev-margin-2: 2px;
+$ev-margin-4: 4px;
+$ev-margin-6: 6px;
+$ev-padding-8: 8px;
+$ev-margin-10: 10px;
+$ev-margin-12: 12px;
+$ev-margin-14: 14px;
+$ev-margin-18: 18px;
+$ev-margin-16: 16px;
+$ev-margin-20: 20px;
+$ev-margin-22: 22px;
+$ev-margin-24: 24px;
+$ev-margin-26: 26px;
+$ev-margin-28: 28px;
+$ev-margin-30: 30px;
+$ev-margin-32: 32px;
+$ev-margin-34: 34px;
+$ev-margin-36: 36px;
+$ev-margin-40: 40px;
+$ev-margin-42: 42px;
+$ev-margin-44: 44px;
+$ev-margin-46: 46px;
+$ev-margin-48: 48px;
+$ev-margin-50: 50px;
+$ev-margin-52: 52px;
+$ev-margin-58: 58px;
+$ev-margin-60: 60px;
+$ev-margin-62: 62px;
+$ev-margin-64: 64px;
+$ev-margin-66: 66px;
+$ev-margin-68: 68px;
+$ev-margin-70: 70px;
+$ev-margin-72: 72px;
+$ev-margin-76: 76px;
+$ev-margin-86: 86px;
+$ev-margin-94: 94px;
+$ev-margin-96: 96px;
+$ev-margin-100: 100px;
+$ev-margin-110: 110px;
+$ev-margin-142: 142px;
+$ev-margin-150: 150px;
+$ev-margin-156: 156px;
+$ev-margin-174: 174px;
+$ev-margin-minus-8: -8px;
+$ev-margin-minus-14: -14px;
+$ev-margin-minus-58: -58px;
+
+//border
+$ev-border-px-0: 0px;
+$ev-border-px-1: 1px;
+$ev-border-px-2: 2px;
+$ev-border-px-4: 4px;
+$ev-border-px-5: 5px;
+$ev-border-px-6: 6px;
+$ev-border-px-10: 10px;
+$ev-border-percent-50: 50%;
+
+//border-radius
+$ev-border-radius-px-0: 0px;
+$ev-border-radius-px-2: 2px;
+$ev-border-radius-px-4: 4px;
+$ev-border-radius-px-8: 8px;
+$ev-border-radius-px-10: 10px;
+$ev-border-radius-px-24: 24px;
+$ev-border-radius-px-30: 30px;
+$ev-border-radius-100: 100%;
+
+//font weight
+$ev-font-weight-300: 300;
+$ev-font-weight-400: 400;
+$ev-font-weight-500: 500;
+$ev-font-weight-600: 600;
+$ev-font-weight-700: 700;
+$ev-font-weight-800: 800;
+// Manager Width
+$ev-width-medium: 364px;
+
+// box shadow
+$ev-box-shadow-0: 0px;
+$ev-box-shadow-px-1: 1px;
+$ev-box-shadow-px-4: 4px;
+$ev-box-shadow-px-14: 14px;
+$ev-box-shadow-minus-100: -100px;
+$ev-box-shadow-minus-1: -1px;
+
+//letter spacing
+$ev-letter-spacing-px-normal: 0.5px;
+
+//line height
+$ev-line-height-7: 7px;
+$ev-line-height-10: 10px;
+$ev-line-height-12: 12px;
+$ev-line-height-14: 14px;
+$ev-line-height-15: 15px;
+$ev-line-height-16: 16px;
+$ev-line-height-17: 17px;
+$ev-line-height-18: 18px;
+$ev-line-height-19: 19px;
+$ev-line-height-20: 20px;
+$ev-line-height-21: 21px;
+$ev-line-height-22: 22px;
+$ev-line-height-24: 24px;
+$ev-line-height-25: 25px;
+$ev-line-height-29: 29px;
+$ev-line-height-30: 30px;
+$ev-line-height-41: 41px;
+$ev-line-height-44: 44px;
+$ev-line-height-65: 65px;
+$ev-line-height-80: 80px;
+
+// rotate deg
+$ev-rotate-def-right: 90deg;
+$ev-rotate-def-down: 180deg;
+
+// Manager Font Families
+$ws-font-family-montserrat: 'Montserrat';
+$ws-font-family-andada-pro: 'Andada Pro';
+$ws-font-family-lato: 'Lato';
+$ws-font-family-quicksand: 'Quicksand';
+$ws-font-family-great-vibes: 'Great Vibes';
+$ws-font-family-old-standart: 'Old Standard TT';
+$ws-font-family-raleway: 'Raleway';
+
+// Screen sizes
+$ev-small-screen: 500px;
+$ev-medium-screen: 1024px;
+$ev-large-screen: 1950px;
+
+:export {
+  primaryColor: $ev-color-black;
+  backgroundColor: $ev-color-gray;
+  padding: $ev-color-gray-borders;
+}

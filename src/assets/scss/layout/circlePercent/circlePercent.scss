@@ -1,0 +1,28 @@
+@import '../../abstracts/variables';
+
+.percent-container{
+    position: relative;
+    transform: rotate($ev-rotate-def-right);
+    .percent{
+        position: absolute;
+        left: 0;
+    }
+    .percent-color-red{
+        color: $ev-color-red-percent;
+    }
+    .percent-color-orange{
+        color: $ev-color-orange-percent;
+    }
+    .percent-color-blue{
+        color: $ev-color-blue-percent;
+    }
+    .percent-completed{
+        color: $ev-color-completed;
+    }
+    .percent-color{
+        color: $ev-color-light-gray-2;
+    }
+    .percent-color-2{
+        color: $ev-color-gray-circle-border;
+    }
+}
