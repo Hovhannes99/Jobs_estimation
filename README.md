@@ -3,17 +3,12 @@
 We are using GitHub for our project.
 
 ## Setup 
-1.You will be  need  clone the repo.
 
-
-### `git clone git@github.com:STA-Development/evaluation.git`
-
-
-2.You are needed installation:
+1.You are needed installation:
 
 ### `yarn install`
 
-3.Run the app in development mode:
+2.Run the app in development mode:
 
 ### `yarn start`
 
@@ -31,8 +26,7 @@ You will also see any lint errors in the console.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
 
 ### `yarn run build`
 
