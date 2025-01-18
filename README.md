@@ -1,4 +1,4 @@
-# Getting Started "Evaluation" project
+# Getting Started "JOBS ESTIMATION" project
     
 We are using GitHub for our project.
 
